@@ -2,3 +2,5 @@
 Algorithms covering Basic Data Structures with their Python Implementation (including algorithms on basic structures such as control statements)
 
 Algo 0: Basic Structures (Control Statements)
+
+Algo 1: Linear Arrays 
