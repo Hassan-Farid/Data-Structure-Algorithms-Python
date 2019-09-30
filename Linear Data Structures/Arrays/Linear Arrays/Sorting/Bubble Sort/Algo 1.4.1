@@ -1,0 +1,20 @@
+Algo 1.4.1: Sorting Linear Array using Bubble Sorting (For Ascending Order)
+
+Bubble_sort(Array[], int N):
+
+	START
+Step 01: Reading input
+	Read Array[]
+Step 02: Performing Bubble Sort Procedure
+	Repeat FOR I := 1 TO N-1 BY 1 DO:
+		[a. Comparing each element, decrementing total elements each time by 1]
+		Repeat FOR J := 1 TO N-I-1 BY 1 DO:
+			[b. Comparing if greater, than swap]
+			IF A[J] > A[J+1] THEN:
+				SET TEMP := A[J]
+				SET A[J] := A[J+1]
+				SET A[J+1] := TEMP
+			END IF
+		END DO
+	END DO
+	EXIT
