@@ -1,0 +1,25 @@
+
+Algo 1.4.3: Sorting a Linear Array using Insertion Sort (Ascending Order)
+
+Insertion_sort(Array[], int N):
+
+	START
+Step 01: [Reading input]
+	Read Array
+Step 02: [Applying Insertion Sort Procedure]
+	Repeat FOR I := 2 TO N BY 1 DO:  
+		[a. Initializing element being compared to]
+		SET X := A[I]
+		[b. Initializing position of item to be compared]
+		SET J := I -1
+		[c. If item greater than other element, swap positions until sorted]
+		Repeat WHILE A[J] > X AND J >= 1 DO: 
+			SET A[J+1] := A[J]
+			SET J := J-1
+		END DO
+		[d. Assigning the next item to the initial element of comparision]
+		SET A[J + 1] := X
+	END DO
+	EXIT
+	
+
