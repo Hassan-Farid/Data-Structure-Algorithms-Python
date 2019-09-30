@@ -1,0 +1,28 @@
+
+#Algo 1.4.2: Sorting Linear Array using Selection Sort(Ascending Order)
+
+Selection_sort(Array[], int N):
+
+	START
+Step 01: [Reading input]
+	Read Array[]
+Step 02: [Performing Selection Sort Procedure]
+	Repeat FOR I := 1 TO N BY 1 DO:
+		[a. Setting pointer for item to be compared]
+		SET K := I
+		[b. Comparing item with every other element of the array]
+		Repeat FOR J := K+1 TO N BY 1 DO:
+			[c. If some other element greater than item, than update pointer value]
+			IF A[K] > A[J] THEN:
+				SET K := J
+			END IF
+		[d. If pointer value not as same as before, swap elements]
+		IF K != I THEN:
+			SET TEMP := A[K]
+			SET A[K] := A[I]
+			SET A[I] := TEMP
+		END IF
+		END DO
+	END DO
+	EXIT
+	
