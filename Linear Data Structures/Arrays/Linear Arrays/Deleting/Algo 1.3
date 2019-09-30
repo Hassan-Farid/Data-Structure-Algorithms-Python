@@ -1,0 +1,22 @@
+
+Algo 1.3: Deletion on Linear Array using Traversal of Indices
+
+Delete_traverse(Array[], int N, int K):
+
+	START
+Step 01: Reading input
+	Read Array, K
+Step 02: Initialize Counter
+	SET J := K
+Step 03: Checking for Lower Bound
+	IF J > L.B. THEN:
+		Repeat WHILE J < N DO:
+		[a. Repeatd Downward Movement of Elements]
+			SET A[J] := A[J+1]
+		[b. Increment Counter]
+			SET J := J + 1
+		END DO
+		[c. Decreasing Total number of Elements]
+		SET N := N + 1
+	END IF
+	
