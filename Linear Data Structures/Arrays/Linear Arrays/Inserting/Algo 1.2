@@ -1,0 +1,27 @@
+
+Algo 1.2: Insertion in Linear Array using Traversal of Indices
+
+Insert_traverse(Array[], int N, int Value, int K):
+
+	START
+Step 01: Reading input
+	Read Array, Value, K
+Step 02: Initializing counter variable
+	SET J := N
+Step 03: Checking for Upper Bound
+	IF J < U.B. THEN:
+		Repeat WHILE J >= K DO:
+		[a. Repeated Upward Movement of Elements]		
+			SET Array[J + 1] := Array[J]
+		[b. Decrementing Counter]
+			SET J := J - 1
+		END DO
+		[c. Inserting Element]
+		SET Array[K] := Value
+		[d. Increasing Array Size]
+		SET N := N + 1
+	END IF
+	EXIT
+	
+	
+		
